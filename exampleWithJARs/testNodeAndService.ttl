@@ -1,0 +1,523 @@
+@prefix :             <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#> .
+@prefix archi:        <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix archimateiac: <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terra:        <http://archimateiac.raphaelhackenso.at/TerraformOntology#> .
+@prefix xml:          <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+
+terra:azurerm_linux_virtual_machine
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Device ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_network_interface ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:ApplicationCollaboration
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_service_plan
+                         ] .
+
+archimateiac:testStorage
+        rdf:type                      terra:azurerm_storage_account , owl:NamedIndividual ;
+        terra:account_replication_type_dp
+                "\"LRS\"" ;
+        terra:account_tier_dp         "\"Standard\"" ;
+        terra:hasBlockType            archimateiac:testStorage_timeouts_1 ;
+        terra:location_dp             "\"West Europe\"" ;
+        terra:name_dp                 "\"myarchimateiacstorage\"" ;
+        terra:resource_group_name_dp  "azurerm_resource_group.testRG.name" .
+
+terra:azurerm_api_management_product
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Product ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_resource_group
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Grouping .
+
+terra:azurerm_storage_table_entity
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:DataObject ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_storage_table ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:TechnologyEvent
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_network_watcher
+                         ] .
+
+archi:Path  rdf:type     owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_subnet
+                         ] .
+
+terra:azurerm_api_management_api_operation
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:BusinessService ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management_api ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_service_plan
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:ApplicationCollaboration ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:CommunicationNetwork
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_virtual_network
+                         ] .
+
+terra:azurerm_api_management_api_operation_policy
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Contract ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management_api_operation ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:TechnologyCollaboration
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_linux_virtual_machine_scale_set
+                         ] .
+
+terra:azurerm_storage_share
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:TechnologyService ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_storage_account ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:DataObject  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_storage_table_entity
+                         ] .
+
+archi:BusinessInterface
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_api
+                         ] .
+
+terra:azurerm_linux_function_app
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:ApplicationComponent ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_storage_account ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_service_plan ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_linux_function_app_slot
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:ApplicationInterface ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_linux_function_app ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archimateiac:testShare
+        rdf:type                       terra:azurerm_storage_share , owl:NamedIndividual ;
+        terra:hasBlockType             archimateiac:testShare_acl_1 ;
+        terra:name_dp                  "\"myarchimateiacshare\"" ;
+        terra:quota_dp                 "50"^^xsd:float ;
+        terra:storage_account_name_dp  "azurerm_storage_account.testStorage.name" .
+
+archi:Contract  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_api_operation_policy
+                         ] .
+
+archi:ApplicationInterface
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_linux_function_app_slot
+                         ] .
+
+terra:azurerm_subnet  rdf:type  owl:Class ;
+        rdfs:subClassOf  archi:Path ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_virtual_network ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archimateiac:testShare_acl_1
+        rdf:type     terra:acl , owl:NamedIndividual ;
+        terra:id_dp  "\"MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTI\"" .
+
+terra:azurerm_api_management_group
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:BusinessRole ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:SystemSoftware  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_image
+                         ] .
+
+archi:Product  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_product
+                         ] .
+
+archi:ApplicationService
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_storage_table
+                         ] .
+
+terra:azurerm_network_watcher
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:TechnologyEvent ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_api_management_group_user
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:BusinessActor ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archimateiac:requiresOtherTerraformResource
+        rdf:type  owl:ObjectProperty .
+
+archi:BusinessRole  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_group
+                         ] .
+
+archi:ApplicationComponent
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_linux_function_app
+                         ] .
+
+terra:azurerm_storage_table
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:ApplicationService ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_storage_account ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:Representation  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_email_template
+                         ] .
+
+archi:Device  rdf:type   owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_linux_virtual_machine
+                         ] .
+
+terra:azurerm_api_management_api
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:BusinessInterface ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_api_management
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:BusinessCollaboration ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archimateiac:testRG  rdf:type  terra:azurerm_resource_group , owl:NamedIndividual ;
+        terra:hasBlockType  archimateiac:testRG_timeouts_1 ;
+        terra:location_dp   "\"West Europe\"" ;
+        terra:name_dp       "\"testarchimateRG\"" .
+
+terra:azurerm_linux_virtual_machine_scale_set
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:TechnologyCollaboration ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_network_interface ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:TechnologyInterface
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_network_interface
+                         ] .
+
+archi:Artifact  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_storage_share_file
+                         ] .
+
+archi:BusinessService
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_api_operation
+                         ] .
+
+archimateiac:semanticallyAnnotatedAs
+        rdf:type  owl:ObjectProperty .
+
+archi:Node  rdf:type     owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_storage_account
+                         ] .
+
+archi:BusinessCollaboration
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management
+                         ] .
+
+archi:TechnologyService
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_storage_share
+                         ] .
+
+terra:azurerm_image  rdf:type  owl:Class ;
+        rdfs:subClassOf  archi:SystemSoftware ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+archi:Grouping  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_resource_group
+                         ] .
+
+terra:azurerm_network_interface
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:TechnologyInterface ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_virtual_network ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_subnet ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_storage_share_file
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Artifact ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_storage_share ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+<http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology>
+        rdf:type     owl:Ontology ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "Raphael Hackensöllner" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Domain Ontology for semantically annotating ArchiMate concepts with Infrastructure as Code" ;
+        owl:imports  <http://ikm-group.ch/archiMEO/archimate> , <http://archimateiac.raphaelhackenso.at/TerraformOntology> .
+
+archi:BusinessActor  rdf:type  owl:Class ;
+        rdfs:subClassOf  [ rdf:type            owl:Restriction ;
+                           owl:onProperty      archimateiac:semanticallyAnnotatedAs ;
+                           owl:someValuesFrom  terra:azurerm_api_management_group_user
+                         ] .
+
+archimateiac:testRG_timeouts_1
+        rdf:type         terra:timeouts , owl:NamedIndividual ;
+        terra:create_dp  "\"2h\"" .
+
+archimateiac:testStorage_timeouts_1
+        rdf:type         terra:timeouts , owl:NamedIndividual ;
+        terra:create_dp  "\"1h\"" ;
+        terra:update_dp  "\"2h\"" .
+
+terra:azurerm_storage_account
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Node ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_virtual_network
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:CommunicationNetwork ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_subnet ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+terra:azurerm_api_management_email_template
+        rdf:type         owl:Class ;
+        rdfs:subClassOf  archi:Representation ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_resource_group ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] ;
+        rdfs:subClassOf  [ rdf:type                  owl:Restriction ;
+                           owl:onClass               terra:azurerm_api_management ;
+                           owl:onProperty            archimateiac:requiresOtherTerraformResource ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .

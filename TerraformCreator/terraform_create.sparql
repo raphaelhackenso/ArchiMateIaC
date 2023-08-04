@@ -1,0 +1,44 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#>
+PREFIX archi: <http://ikm-group.ch/archiMEO/archimate#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX archimateiac: <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#>
+
+
+# Return all individuals and their classes 
+SELECT ?individual ?class
+WHERE {
+   ?individual a owl:NamedIndividual .
+   ?individual a ?class
+   FILTER(?class != owl:NamedIndividual)
+  FILTER(REGEX(STR(?individual), STR(archimateiac:)))
+}
+
+
+# Check if a given individual is an individual for a resource_schema -> result == 0 -> is a resource_schema
+SELECT ?individual
+WHERE {
+   ?individual terra:hasBlockType archimateiac:testStorage_timeouts_1
+}
+
+
+
+# Return all dataproperties and their values for an individual
+SELECT ?dataproperty ?value
+WHERE {
+   archimateiac:default_azurerm_aadb2c_directory a terra:azurerm_aadb2c_directory .
+      archimateiac:default_azurerm_aadb2c_directory ?dataproperty ?value .
+	  FILTER(?dataproperty != terra:hasBlockType)
+  	FILTER(?dataproperty != rdf:type)
+}
+
+# Return all connected blocktype-individuals 
+SELECT ?blocktype
+WHERE {
+   archimateiac:default_azurerm_aadb2c_directory a terra:azurerm_aadb2c_directory .
+      archimateiac:default_azurerm_aadb2c_directory terra:hasBlockType ?blocktype .
+}
+

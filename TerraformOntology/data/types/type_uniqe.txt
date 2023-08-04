@@ -1,0 +1,234 @@
+                "key_url": "string",
+                "secret_url": "string",
+                "vault_id": "string"
+              "object",
+              {
+              }
+            "list",
+            "set",
+            "string"
+            [
+            ]
+          "action": "string",
+          "disk_encryption_key": [
+          "fqdn": "string",
+          "ignore_missing_virtual_network_service_endpoint": "bool",
+          "ip_addresses": [
+          "ip_mask": "string"
+          "ip_range": "string"
+          "key_encryption_key": [
+          "name": "string",
+          "subnet_id": "string"
+          "ttl": "number",
+          "type": "string"
+          "value": "string",
+          "value_type": "string"
+          "x_azure_fdid": [
+          "x_fd_health_probe": [
+          "x_forwarded_for": [
+          "x_forwarded_host": [
+          ]
+          ],
+        "object",
+        {
+        }
+      "list",
+      "map",
+      "set",
+      "string"
+      [
+      ]
+    "access": "string",
+    "action": "string",
+    "additional_details": [
+    "address_prefix": "string",
+    "application_id": "string",
+    "audience": [
+    "authentication_type": "string",
+    "authority": "string"
+    "backend_pool_health_probe_ids": [
+    "backend_pool_ids": [
+    "backend_pool_load_balancing_ids": [
+    "backend_port": "number",
+    "batch_frequency_in_seconds": "number",
+    "capacity": "number",
+    "carrier_name": "string",
+    "certificate_name": "string",
+    "certificate_permissions": [
+    "client_certificate": "string",
+    "client_id": "string",
+    "client_key": "string",
+    "cluster_ca_certificate": "string",
+    "comments": "string",
+    "communities": [
+    "condition": "string",
+    "configured_role_types": [
+    "connection_string": "string",
+    "connector_id": "string",
+    "container_name": "string",
+    "created": "string",
+    "culture": "string",
+    "data_types": [
+    "days": "number",
+    "default_action": "string",
+    "description": "string",
+    "destination_address_prefix": "string",
+    "destination_address_prefixes": [
+    "destination_application_security_group_ids": [
+    "destination_port_range": "string",
+    "destination_port_ranges": [
+    "direction": "string",
+    "disk_id": "string",
+    "disk_uri": "string",
+    "enabled": "bool"
+    "enabled": "bool",
+    "encoding": "string",
+    "endpoint_names": [
+    "endpoint_uri": "string",
+    "entity_path": "string",
+    "event_hub_namespace_id": "string",
+    "exclude": "string",
+    "expires": "string",
+    "express_route_id": "string",
+    "express_route_private_peering_id": "string",
+    "failover_test_public_ip_address_id": "string",
+    "failover_test_static_ip": "string",
+    "failover_test_subnet_name": "string",
+    "file_name_format": "string",
+    "fqdn": "string",
+    "fqdns": [
+    "frontend_endpoint_ids": [
+    "frontend_port": "number",
+    "hcs_version": "string",
+    "headers": [
+    "host": "string",
+    "id": "string",
+    "identity_client_id": "string",
+    "identity_id": "string",
+    "inbound_nat_rule_name": "string"
+    "info": "string",
+    "ip_address": "string",
+    "ip_addresses": [
+    "ip_mask": "string"
+    "ip_rule": [
+    "is_primary": "bool",
+    "job_schedule_id": "string",
+    "key": "string",
+    "key_name": "string",
+    "key_permissions": [
+    "key_vault_id": "string",
+    "key_vault_key_id": "string"
+    "key_vault_secret_name": "string",
+    "keys": [
+    "last_update": "string"
+    "location": "string",
+    "login": "string",
+    "management_groups": [
+    "max": "string",
+    "max_chunk_size_in_bytes": "number",
+    "min": "string",
+    "model": "string",
+    "name": "string"
+    "name": "string",
+    "next_hop_in_ip_address": "string",
+    "next_hop_type": "string"
+    "node_count": "number",
+    "not_before": "string",
+    "object_id": "string",
+    "parameters": [
+    "password": "string"
+    "password": "string",
+    "pattern_type_key": "string",
+    "pattern_type_values": [
+    "permissions": "string",
+    "port": "number",
+    "ports": [
+    "primary_key": "string",
+    "primary_subnet_cidr": "string",
+    "principal_id": "string",
+    "prioritize": "string"
+    "priority": "number",
+    "private_dns_zone_id": "string",
+    "protocol": "string"
+    "protocol": "string",
+    "provisioning_state": "string"
+    "public_network_access_enabled": "bool",
+    "record_sets": [
+    "recovery_level": "string",
+    "recovery_public_ip_address_id": "string",
+    "registry_server": "string",
+    "resource_group_id": "string",
+    "resource_group_name": "string",
+    "role": "string"
+    "routing_rule_ids": [
+    "rule_type": "string"
+    "run_on": "string",
+    "schedule_name": "string"
+    "secondary_key": "string"
+    "secondary_subnet_cidr": "string"
+    "secret": "string"
+    "secret_permissions": [
+    "security_group": "string"
+    "serial_number": "string",
+    "service_tag": "string",
+    "software_version": "string",
+    "source": "string"
+    "source_address_prefix": "string",
+    "source_address_prefixes": [
+    "source_application_security_group_ids": [
+    "source_network_interface_id": "string",
+    "source_port_range": "string",
+    "source_port_ranges": [
+    "staging_storage_account_id": "string",
+    "status": "string",
+    "storage_account_id": "string"
+    "storage_permissions": [
+    "subscriptions": [
+    "supported_values": [
+    "target_disk_encryption": [
+    "target_disk_encryption_set_id": "string",
+    "target_disk_type": "string",
+    "target_replica_disk_type": "string",
+    "target_resource_group_id": "string"
+    "target_static_ip": "string",
+    "target_storage_account_id": "string"
+    "target_subnet_name": "string"
+    "tenant_id": "string"
+    "tenant_id": "string",
+    "time_zone": "string",
+    "tracking_id": "string",
+    "tracking_url": "string"
+    "trusted_service_access_enabled": "bool",
+    "type": "string"
+    "unique": "bool"
+    "updated": "string"
+    "url": "string"
+    "user_assigned_identity_id": "string"
+    "user_assigned_identity_id": "string",
+    "user_name": "string"
+    "username": "string"
+    "value": "string"
+    "values": [
+    "virtual_network": [
+    "virtual_network_rule": [
+    "virtual_network_subnet_id": "string"
+    "x_azure_fdid": [
+    "x_fd_health_probe": [
+    "x_forwarded_for": [
+    "x_forwarded_host": [
+    "xml_content": "string",
+    "xml_link": "string"
+    ]
+    ],
+  "list",
+  "number"
+  "object",
+  {
+  }
+"list"
+"map"
+"number"
+"set"
+"string"
+[
+]

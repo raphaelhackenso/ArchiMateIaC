@@ -56,7 +56,9 @@ public class AxiomesToLanguageOntology {
                             //+ cardinality + "; targetConcepts: " + targetConcepts);
 
                     // TODO
-                    updater.addClassExpression("http://ikm-group.ch/archiMEO/archimate#", sourceConcept, type,
+                    //updater.addClassExpression("http://ikm-group.ch/archiMEO/archimate#", sourceConcept, type,
+                    //        cardinality, targetConcepts);
+                    updater.addClassExpression("http://github.com/raphaelhackenso/ArchiMateIaC/TerraformOntology#", sourceConcept, type,
                             cardinality, targetConcepts);
                 }
             }

@@ -1,0 +1,1518 @@
+:﻿azurerm_active_directory_domain_service rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :initial_replica_set
+                             ] .
+:azurerm_api_management_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :location_data
+                             ] .
+:azurerm_app_service_connection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :authentication
+                             ] .
+:azurerm_app_service_plan rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backend_address_pool
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backend_http_settings
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :frontend_ip_configuration
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :frontend_port
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway_ip_configuration
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :http_listener
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :request_routing_rule
+                             ] .
+:azurerm_application_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_application_insights_standard_web_test rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :request
+                             ] .
+:azurerm_application_insights_workbook_template rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :galleries
+                             ] .
+:azurerm_arc_kubernetes_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_arc_kubernetes_cluster_extension rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_automation_connection_type rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :field
+                             ] .
+:azurerm_automation_module rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :module_link
+                             ] .
+:azurerm_automation_source_control rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :security
+                             ] .
+:azurerm_backup_policy_file_share rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backup
+                             ] .
+:azurerm_backup_policy_file_share rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :retention_daily
+                             ] .
+:azurerm_backup_policy_vm rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backup
+                             ] .
+:azurerm_backup_policy_vm_workload rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :protection_policy
+                             ] .
+:azurerm_backup_policy_vm_workload rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :settings
+                             ] .
+:azurerm_batch_pool rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_image_reference
+                             ] .
+:azurerm_billing_account_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_options
+                             ] .
+:azurerm_billing_account_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_storage_location
+                             ] .
+:azurerm_blueprint_assignment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_bot_channel_directline rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site
+                             ] .
+:azurerm_bot_channel_facebook rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :page
+                             ] .
+:azurerm_bot_channel_line rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :line_channel
+                             ] .
+:azurerm_capacity_reservation rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_cdn_endpoint rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :origin
+                             ] .
+:azurerm_cdn_frontdoor_custom_domain rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :tls
+                             ] .
+:azurerm_cdn_frontdoor_origin_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :load_balancing
+                             ] .
+:azurerm_cdn_frontdoor_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :actions
+                             ] .
+:azurerm_cdn_frontdoor_secret rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :secret
+                             ] .
+:azurerm_cdn_frontdoor_security_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :security_policies
+                             ] .
+:azurerm_cognitive_deployment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :model
+                             ] .
+:azurerm_cognitive_deployment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :scale
+                             ] .
+:azurerm_confidential_ledger rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :azuread_based_service_principal
+                             ] .
+:azurerm_consumption_budget_management_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :notification
+                             ] .
+:azurerm_consumption_budget_management_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :time_period
+                             ] .
+:azurerm_consumption_budget_resource_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :notification
+                             ] .
+:azurerm_consumption_budget_resource_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :time_period
+                             ] .
+:azurerm_consumption_budget_subscription rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :notification
+                             ] .
+:azurerm_consumption_budget_subscription rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :time_period
+                             ] .
+:azurerm_container_app rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :template
+                             ] .
+:azurerm_container_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :container
+                             ] .
+:azurerm_container_registry_token_password rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :password1
+                             ] .
+:azurerm_cosmosdb_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :consistency_policy
+                             ] .
+:azurerm_cosmosdb_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :geo_location
+                             ] .
+:azurerm_cosmosdb_cassandra_table rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :schema
+                             ] .
+:azurerm_cosmosdb_sql_role_definition rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :permissions
+                             ] .
+:azurerm_data_factory_custom_dataset rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :linked_service
+                             ] .
+:azurerm_data_factory_data_flow rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sink
+                             ] .
+:azurerm_data_factory_data_flow rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :source
+                             ] .
+:azurerm_data_factory_flowlet_data_flow rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sink
+                             ] .
+:azurerm_data_factory_flowlet_data_flow rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :source
+                             ] .
+:azurerm_data_factory_trigger_blob_event rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :pipeline
+                             ] .
+:azurerm_data_factory_trigger_custom_event rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :pipeline
+                             ] .
+:azurerm_data_factory_trigger_tumbling_window rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :pipeline
+                             ] .
+:azurerm_data_share_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_data_share_dataset_blob_storage rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_account
+                             ] .
+:azurerm_databox_edge_order rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :contact
+                             ] .
+:azurerm_databox_edge_order rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :shipment_address
+                             ] .
+:azurerm_datadog_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :datadog_organization
+                             ] .
+:azurerm_datadog_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :user
+                             ] .
+:azurerm_dedicated_hardware_security_module rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :network_profile
+                             ] .
+:azurerm_dev_test_global_vm_shutdown_schedule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :notification_settings
+                             ] .
+:azurerm_dev_test_linux_virtual_machine rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gallery_image_reference
+                             ] .
+:azurerm_dev_test_schedule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :notification_settings
+                             ] .
+:azurerm_dev_test_windows_virtual_machine rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gallery_image_reference
+                             ] .
+:azurerm_disk_encryption_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_dns_caa_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_dns_mx_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_dns_srv_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_dns_txt_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_express_route_circuit rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_firewall_application_rule_collection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rule
+                             ] .
+:azurerm_firewall_nat_rule_collection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rule
+                             ] .
+:azurerm_firewall_network_rule_collection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rule
+                             ] .
+:azurerm_frontdoor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backend_pool
+                             ] .
+:azurerm_frontdoor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backend_pool_health_probe
+                             ] .
+:azurerm_frontdoor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :backend_pool_load_balancing
+                             ] .
+:azurerm_frontdoor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :frontend_endpoint
+                             ] .
+:azurerm_frontdoor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :routing_rule
+                             ] .
+:azurerm_gallery_application_version rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :manage_action
+                             ] .
+:azurerm_gallery_application_version rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :source
+                             ] .
+:azurerm_gallery_application_version rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :target_region
+                             ] .
+:azurerm_hdinsight_hadoop_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :component_version
+                             ] .
+:azurerm_hdinsight_hadoop_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway
+                             ] .
+:azurerm_hdinsight_hadoop_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :roles
+                             ] .
+:azurerm_hdinsight_hbase_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :component_version
+                             ] .
+:azurerm_hdinsight_hbase_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway
+                             ] .
+:azurerm_hdinsight_hbase_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :roles
+                             ] .
+:azurerm_hdinsight_interactive_query_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :component_version
+                             ] .
+:azurerm_hdinsight_interactive_query_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway
+                             ] .
+:azurerm_hdinsight_interactive_query_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :roles
+                             ] .
+:azurerm_hdinsight_kafka_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :component_version
+                             ] .
+:azurerm_hdinsight_kafka_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway
+                             ] .
+:azurerm_hdinsight_kafka_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :roles
+                             ] .
+:azurerm_hdinsight_spark_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :component_version
+                             ] .
+:azurerm_hdinsight_spark_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :gateway
+                             ] .
+:azurerm_hdinsight_spark_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :roles
+                             ] .
+:azurerm_healthcare_fhir_service rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :authentication
+                             ] .
+:azurerm_hpc_cache_access_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :access_rule
+                             ] .
+:azurerm_hpc_cache_nfs_target rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :namespace_junction
+                             ] .
+:azurerm_iot_time_series_insights_gen2_environment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage
+                             ] .
+:azurerm_iot_time_series_insights_reference_data_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :key_property
+                             ] .
+:azurerm_iothub rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_iothub_dps rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_key_vault_certificate_contacts rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :contact
+                             ] .
+:azurerm_kubernetes_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :default_node_pool
+                             ] .
+:azurerm_kusto_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_lab_service_lab rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :security
+                             ] .
+:azurerm_lab_service_lab rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :virtual_machine
+                             ] .
+:azurerm_lighthouse_definition rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :authorization
+                             ] .
+:azurerm_linux_function_app rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_linux_function_app_slot rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_linux_virtual_machine rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :os_disk
+                             ] .
+:azurerm_linux_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :network_interface
+                             ] .
+:azurerm_linux_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :os_disk
+                             ] .
+:azurerm_linux_web_app rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_linux_web_app_slot rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_log_analytics_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_log_analytics_solution rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :plan
+                             ] .
+:azurerm_logic_app_integration_account_agreement rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :guest_identity
+                             ] .
+:azurerm_logic_app_integration_account_agreement rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :host_identity
+                             ] .
+:azurerm_logic_app_integration_account_batch_configuration rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :release_criteria
+                             ] .
+:azurerm_logic_app_integration_account_partner rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :business_identity
+                             ] .
+:azurerm_logz_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :plan
+                             ] .
+:azurerm_logz_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :user
+                             ] .
+:azurerm_logz_sub_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :user
+                             ] .
+:azurerm_machine_learning_compute_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :scale_settings
+                             ] .
+:azurerm_machine_learning_workspace rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_media_content_key_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :policy_option
+                             ] .
+:azurerm_media_job rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :input_asset
+                             ] .
+:azurerm_media_job rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :output_asset
+                             ] .
+:azurerm_media_live_event rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :input
+                             ] .
+:azurerm_media_services_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_account
+                             ] .
+:azurerm_mobile_network_packet_core_control_plane rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :local_diagnostics_access
+                             ] .
+:azurerm_mobile_network_service rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :pcc_rule
+                             ] .
+:azurerm_mobile_network_sim_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :slice
+                             ] .
+:azurerm_mobile_network_sim_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :user_equipment_aggregate_maximum_bit_rate
+                             ] .
+:azurerm_mobile_network_slice rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :single_network_slice_selection_assistance_information
+                             ] .
+:azurerm_monitor_aad_diagnostic_setting rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :log
+                             ] .
+:azurerm_monitor_action_rule_suppression rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :suppression
+                             ] .
+:azurerm_monitor_activity_log_alert rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :criteria
+                             ] .
+:azurerm_monitor_alert_prometheus_rule_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rule
+                             ] .
+:azurerm_monitor_autoscale_setting rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :profile
+                             ] .
+:azurerm_monitor_data_collection_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :data_flow
+                             ] .
+:azurerm_monitor_data_collection_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :destinations
+                             ] .
+:azurerm_monitor_log_profile rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :retention_policy
+                             ] .
+:azurerm_monitor_scheduled_query_rules_alert rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :action
+                             ] .
+:azurerm_monitor_scheduled_query_rules_alert rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :trigger
+                             ] .
+:azurerm_monitor_scheduled_query_rules_alert_v2 rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :criteria
+                             ] .
+:azurerm_monitor_scheduled_query_rules_log rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :criteria
+                             ] .
+:azurerm_monitor_smart_detector_alert_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :action_group
+                             ] .
+:azurerm_mssql_database_vulnerability_assessment_rule_baseline rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :baseline_result
+                             ] .
+:azurerm_mssql_elasticpool rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :per_database_settings
+                             ] .
+:azurerm_mssql_elasticpool rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_mssql_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :partner_server
+                             ] .
+:azurerm_mssql_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :read_write_endpoint_failover_policy
+                             ] .
+:azurerm_mssql_managed_instance_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :read_write_endpoint_failover_policy
+                             ] .
+:azurerm_netapp_volume_group_sap_hana rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 2 ; 
+                               owl:onClass :volume
+                             ] .
+:azurerm_network_connection_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :endpoint
+                             ] .
+:azurerm_network_connection_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :test_configuration
+                             ] .
+:azurerm_network_connection_monitor rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :test_group
+                             ] .
+:azurerm_network_interface rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :ip_configuration
+                             ] .
+:azurerm_network_manager rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :scope
+                             ] .
+:azurerm_network_manager_connectivity_configuration rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :applies_to_group
+                             ] .
+:azurerm_network_packet_capture rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_location
+                             ] .
+:azurerm_network_profile rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :container_network_interface
+                             ] .
+:azurerm_network_watcher_flow_log rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :retention_policy
+                             ] .
+:azurerm_orbital_contact_profile rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :links
+                             ] .
+:azurerm_orbital_spacecraft rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :links
+                             ] .
+:azurerm_point_to_site_vpn_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :connection_configuration
+                             ] .
+:azurerm_policy_set_definition rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :policy_definition_reference
+                             ] .
+:azurerm_policy_virtual_machine_configuration_assignment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :configuration
+                             ] .
+:azurerm_private_dns_mx_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_private_dns_resolver_forwarding_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :target_dns_servers
+                             ] .
+:azurerm_private_dns_resolver_inbound_endpoint rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :ip_configurations
+                             ] .
+:azurerm_private_dns_srv_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_private_dns_txt_record rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :record
+                             ] .
+:azurerm_private_endpoint rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :private_service_connection
+                             ] .
+:azurerm_private_link_service rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :nat_ip_configuration
+                             ] .
+:azurerm_purview_account rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_resource_group_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_options
+                             ] .
+:azurerm_resource_group_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_storage_location
+                             ] .
+:azurerm_resource_group_cost_management_view rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :dataset
+                             ] .
+:azurerm_security_center_assessment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :status
+                             ] .
+:azurerm_security_center_automation rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :action
+                             ] .
+:azurerm_security_center_automation rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :source
+                             ] .
+:azurerm_service_fabric_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :node_type
+                             ] .
+:azurerm_service_fabric_managed_cluster rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :lb_rule
+                             ] .
+:azurerm_shared_image rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identifier
+                             ] .
+:azurerm_shared_image_version rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :target_region
+                             ] .
+:azurerm_signalr_service rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_signalr_service_network_acl rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :public_network
+                             ] .
+:azurerm_spring_cloud_builder rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :build_pack_group
+                             ] .
+:azurerm_spring_cloud_builder rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :stack
+                             ] .
+:azurerm_spring_cloud_connection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :authentication
+                             ] .
+:azurerm_spring_cloud_customized_accelerator rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :git_repository
+                             ] .
+:azurerm_sql_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :partner_servers
+                             ] .
+:azurerm_sql_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :read_write_endpoint_failover_policy
+                             ] .
+:azurerm_sql_managed_instance_failover_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :read_write_endpoint_failover_policy
+                             ] .
+:azurerm_storage_blob_inventory_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rules
+                             ] .
+:azurerm_storage_object_replication rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :rules
+                             ] .
+:azurerm_stream_analytics_function_javascript_uda rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :input
+                             ] .
+:azurerm_stream_analytics_function_javascript_uda rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :output
+                             ] .
+:azurerm_stream_analytics_function_javascript_udf rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :input
+                             ] .
+:azurerm_stream_analytics_function_javascript_udf rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :output
+                             ] .
+:azurerm_stream_analytics_output_blob rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_output_eventhub rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_output_servicebus_queue rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_output_servicebus_topic rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_reference_input_blob rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_stream_input_blob rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_stream_input_eventhub rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_stream_input_eventhub_v2 rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_stream_analytics_stream_input_iothub rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :serialization
+                             ] .
+:azurerm_subscription_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_options
+                             ] .
+:azurerm_subscription_cost_management_export rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :export_data_storage_location
+                             ] .
+:azurerm_subscription_cost_management_view rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :dataset
+                             ] .
+:azurerm_traffic_manager_profile rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :dns_config
+                             ] .
+:azurerm_traffic_manager_profile rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :monitor_config
+                             ] .
+:azurerm_video_analyzer rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :identity
+                             ] .
+:azurerm_video_analyzer rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_account
+                             ] .
+:azurerm_virtual_desktop_scaling_plan rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :schedule
+                             ] .
+:azurerm_virtual_machine rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_os_disk
+                             ] .
+:azurerm_virtual_machine_packet_capture rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_location
+                             ] .
+:azurerm_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :network_profile
+                             ] .
+:azurerm_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :os_profile
+                             ] .
+:azurerm_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :sku
+                             ] .
+:azurerm_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_profile_os_disk
+                             ] .
+:azurerm_virtual_machine_scale_set_packet_capture rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :storage_location
+                             ] .
+:azurerm_virtual_network_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :ip_configuration
+                             ] .
+:azurerm_virtual_network_gateway_nat_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :external_mapping
+                             ] .
+:azurerm_virtual_network_gateway_nat_rule rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :internal_mapping
+                             ] .
+:azurerm_vmware_private_cloud rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :management_cluster
+                             ] .
+:azurerm_voice_services_communications_gateway rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :service_location
+                             ] .
+:azurerm_vpn_gateway_connection rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :vpn_link
+                             ] .
+:azurerm_vpn_server_configuration_policy_group rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :policy
+                             ] .
+:azurerm_web_application_firewall_policy rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :managed_rules
+                             ] .
+:azurerm_web_pubsub_network_acl rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :public_network
+                             ] .
+:azurerm_windows_function_app rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_windows_function_app_slot rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_windows_virtual_machine rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :os_disk
+                             ] .
+:azurerm_windows_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :network_interface
+                             ] .
+:azurerm_windows_virtual_machine_scale_set rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :os_disk
+                             ] .
+:azurerm_windows_web_app rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .
+:azurerm_windows_web_app_slot rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasBlockType ;
+                               owl:minCardinality 1 ; 
+                               owl:onClass :site_config
+                             ] .

@@ -1,0 +1,1 @@
+.. | .type? | select(. != null and type == "array") | unique[]

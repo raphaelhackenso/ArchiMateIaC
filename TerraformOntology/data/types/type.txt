@@ -1,0 +1,5728 @@
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "xml_content": "string",
+    "xml_link": "string"
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "connection_string": "string",
+    "id": "string",
+    "secret": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "connection_string": "string",
+    "id": "string",
+    "secret": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "connection_string": "string",
+    "id": "string",
+    "secret": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "connection_string": "string",
+    "id": "string",
+    "secret": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "certificate_name": "string",
+    "key_vault_id": "string",
+    "key_vault_secret_name": "string",
+    "provisioning_state": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "description": "string",
+    "ip_addresses": [
+      "list",
+      "string"
+    ],
+    "ports": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"set"
+"string"
+"set"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"number"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+[
+  "object",
+  {
+    "job_schedule_id": "string",
+    "parameters": [
+      "map",
+      "string"
+    ],
+    "run_on": "string",
+    "schedule_name": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"number"
+"set"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"number"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"number"
+"set"
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "key_vault_key_id": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "registry_server": "string",
+    "user_assigned_identity_id": "string",
+    "user_name": "string"
+  }
+]
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+[
+  "object",
+  {
+    "port": "number",
+    "protocol": "string"
+  }
+]
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "enabled": "bool",
+    "identity_client_id": "string",
+    "key_vault_key_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "default_action": "string",
+    "ip_rule": [
+      "set",
+      [
+        "object",
+        {
+          "action": "string",
+          "ip_range": "string"
+        }
+      ]
+    ],
+    "virtual_network": [
+      "set",
+      [
+        "object",
+        {
+          "action": "string",
+          "subnet_id": "string"
+        }
+      ]
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "days": "number",
+    "enabled": "bool"
+  }
+]
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "enabled": "bool"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "keys": [
+      "list",
+      "string"
+    ],
+    "unique": "bool"
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"number"
+"list"
+"string"
+"list"
+"number"
+"list"
+"number"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "capacity": "number",
+    "configured_role_types": [
+      "list",
+      "string"
+    ],
+    "culture": "string",
+    "hcs_version": "string",
+    "model": "string",
+    "node_count": "number",
+    "serial_number": "string",
+    "software_version": "string",
+    "status": "string",
+    "time_zone": "string",
+    "type": "string"
+  }
+]
+"map"
+"string"
+"set"
+[
+  "object",
+  {
+    "carrier_name": "string",
+    "serial_number": "string",
+    "tracking_id": "string",
+    "tracking_url": "string"
+  }
+]
+"set"
+[
+  "object",
+  {
+    "additional_details": [
+      "map",
+      "string"
+    ],
+    "comments": "string",
+    "last_update": "string"
+  }
+]
+"set"
+[
+  "object",
+  {
+    "carrier_name": "string",
+    "serial_number": "string",
+    "tracking_id": "string",
+    "tracking_url": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "additional_details": [
+      "map",
+      "string"
+    ],
+    "comments": "string",
+    "info": "string",
+    "last_update": "string"
+  }
+]
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "principal_id": "string",
+    "tenant_id": "string",
+    "type": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "principal_id": "string",
+    "tenant_id": "string",
+    "type": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "ip_mask": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"number"
+"list"
+[
+  "list",
+  "number"
+]
+"list"
+"number"
+"list"
+[
+  "list",
+  "number"
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"number"
+"list"
+[
+  "list",
+  "number"
+]
+"list"
+"number"
+"list"
+[
+  "list",
+  "number"
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "ip_mask": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "default_action": "string",
+    "ip_rule": [
+      "list",
+      [
+        "object",
+        {
+          "action": "string",
+          "ip_mask": "string"
+        }
+      ]
+    ],
+    "public_network_access_enabled": "bool",
+    "trusted_service_access_enabled": "bool",
+    "virtual_network_rule": [
+      "set",
+      [
+        "object",
+        {
+          "ignore_missing_virtual_network_service_endpoint": "bool",
+          "subnet_id": "string"
+        }
+      ]
+    ]
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "backend_pool_health_probe_ids": [
+      "list",
+      "string"
+    ],
+    "backend_pool_ids": [
+      "list",
+      "string"
+    ],
+    "backend_pool_load_balancing_ids": [
+      "list",
+      "string"
+    ],
+    "frontend_endpoint_ids": [
+      "list",
+      "string"
+    ],
+    "routing_rule_ids": [
+      "list",
+      "string"
+    ]
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"set"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "audience": [
+      "list",
+      "string"
+    ],
+    "authority": "string"
+  }
+]
+"set"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "authentication_type": "string",
+    "batch_frequency_in_seconds": "number",
+    "connection_string": "string",
+    "container_name": "string",
+    "encoding": "string",
+    "endpoint_uri": "string",
+    "entity_path": "string",
+    "file_name_format": "string",
+    "identity_id": "string",
+    "max_chunk_size_in_bytes": "number",
+    "name": "string",
+    "resource_group_name": "string",
+    "type": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "endpoint_names": [
+      "list",
+      "string"
+    ],
+    "key": "string",
+    "value": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "condition": "string",
+    "enabled": "bool",
+    "endpoint_names": [
+      "list",
+      "string"
+    ],
+    "name": "string",
+    "source": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "key_name": "string",
+    "permissions": "string",
+    "primary_key": "string",
+    "secondary_key": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "application_id": "string",
+    "certificate_permissions": [
+      "list",
+      "string"
+    ],
+    "key_permissions": [
+      "list",
+      "string"
+    ],
+    "object_id": "string",
+    "secret_permissions": [
+      "list",
+      "string"
+    ],
+    "storage_permissions": [
+      "list",
+      "string"
+    ],
+    "tenant_id": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "created": "string",
+    "enabled": "bool",
+    "expires": "string",
+    "not_before": "string",
+    "recovery_level": "string",
+    "updated": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "client_certificate": "string",
+    "client_key": "string",
+    "cluster_ca_certificate": "string",
+    "host": "string",
+    "password": "string",
+    "username": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "client_certificate": "string",
+    "client_key": "string",
+    "cluster_ca_certificate": "string",
+    "host": "string",
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "client_id": "string",
+    "object_id": "string",
+    "user_assigned_identity_id": "string"
+  }
+]
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "client_id": "string",
+    "object_id": "string",
+    "user_assigned_identity_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "client_id": "string",
+    "object_id": "string",
+    "user_assigned_identity_id": "string"
+  }
+]
+"number"
+"set"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "client_id": "string",
+    "object_id": "string",
+    "user_assigned_identity_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "principal_id": "string",
+    "tenant_id": "string",
+    "type": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "backend_port": "number",
+    "frontend_port": "number",
+    "inbound_nat_rule_name": "string"
+  }
+]
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"number"
+"set"
+"number"
+"set"
+"number"
+"set"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "password": "string",
+    "username": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "action": "string",
+    "headers": [
+      "list",
+      [
+        "object",
+        {
+          "x_azure_fdid": [
+            "set",
+            "string"
+          ],
+          "x_fd_health_probe": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_for": [
+            "set",
+            "string"
+          ],
+          "x_forwarded_host": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    ],
+    "ip_address": "string",
+    "name": "string",
+    "priority": "number",
+    "service_tag": "string",
+    "virtual_network_subnet_id": "string"
+  }
+]
+"set"
+"string"
+"number"
+"set"
+"number"
+"set"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "protocol": "string",
+    "url": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "protocol": "string",
+    "url": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "capacity": "number",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"number"
+"set"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"number"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"number"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"number"
+"list"
+"number"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "location": "string",
+    "role": "string"
+  }
+]
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"number"
+"list"
+"number"
+"list"
+"number"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"number"
+"set"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "management_groups": [
+      "list",
+      "string"
+    ],
+    "subscriptions": [
+      "list",
+      "string"
+    ],
+    "tenant_id": "string"
+  }
+]
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+[
+  "object",
+  {
+    "access": "string",
+    "description": "string",
+    "destination_address_prefix": "string",
+    "destination_address_prefixes": [
+      "set",
+      "string"
+    ],
+    "destination_application_security_group_ids": [
+      "set",
+      "string"
+    ],
+    "destination_port_range": "string",
+    "destination_port_ranges": [
+      "set",
+      "string"
+    ],
+    "direction": "string",
+    "name": "string",
+    "priority": "number",
+    "protocol": "string",
+    "source_address_prefix": "string",
+    "source_address_prefixes": [
+      "set",
+      "string"
+    ],
+    "source_application_security_group_ids": [
+      "set",
+      "string"
+    ],
+    "source_port_range": "string",
+    "source_port_ranges": [
+      "set",
+      "string"
+    ]
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "fqdn": "string",
+    "ip_addresses": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "id": "string",
+    "name": "string",
+    "private_dns_zone_id": "string",
+    "record_sets": [
+      "list",
+      [
+        "object",
+        {
+          "fqdn": "string",
+          "ip_addresses": [
+            "list",
+            "string"
+          ],
+          "name": "string",
+          "ttl": "number",
+          "type": "string"
+        }
+      ]
+    ]
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "event_hub_namespace_id": "string",
+    "resource_group_id": "string",
+    "storage_account_id": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "access": "string",
+    "communities": [
+      "list",
+      "string"
+    ],
+    "name": "string",
+    "rule_type": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+[
+  "object",
+  {
+    "address_prefix": "string",
+    "name": "string",
+    "next_hop_in_ip_address": "string",
+    "next_hop_type": "string"
+  }
+]
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "key": "string",
+    "name": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "description": "string",
+    "name": "string",
+    "supported_values": [
+      "list",
+      "string"
+    ],
+    "values": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "description": "string",
+    "exclude": "string",
+    "name": "string",
+    "prioritize": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "connector_id": "string",
+    "data_types": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "description": "string",
+    "name": "string",
+    "supported_values": [
+      "list",
+      "string"
+    ],
+    "value": "string"
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "description": "string",
+    "max": "string",
+    "min": "string",
+    "name": "string",
+    "value": "string"
+  }
+]
+"list"
+[
+  "object",
+  {
+    "connector_id": "string",
+    "data_types": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "pattern_type_key": "string",
+    "pattern_type_values": [
+      "list",
+      [
+        "object",
+        {
+          "value": "string",
+          "value_type": "string"
+        }
+      ]
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+[
+  "object",
+  {
+    "disk_id": "string",
+    "staging_storage_account_id": "string",
+    "target_disk_encryption": [
+      "list",
+      [
+        "object",
+        {
+          "disk_encryption_key": [
+            "list",
+            [
+              "object",
+              {
+                "secret_url": "string",
+                "vault_id": "string"
+              }
+            ]
+          ],
+          "key_encryption_key": [
+            "list",
+            [
+              "object",
+              {
+                "key_url": "string",
+                "vault_id": "string"
+              }
+            ]
+          ]
+        }
+      ]
+    ],
+    "target_disk_encryption_set_id": "string",
+    "target_disk_type": "string",
+    "target_replica_disk_type": "string",
+    "target_resource_group_id": "string"
+  }
+]
+"set"
+[
+  "object",
+  {
+    "failover_test_public_ip_address_id": "string",
+    "failover_test_static_ip": "string",
+    "failover_test_subnet_name": "string",
+    "is_primary": "bool",
+    "recovery_public_ip_address_id": "string",
+    "source_network_interface_id": "string",
+    "target_static_ip": "string",
+    "target_subnet_name": "string"
+  }
+]
+"set"
+[
+  "object",
+  {
+    "disk_uri": "string",
+    "staging_storage_account_id": "string",
+    "target_storage_account_id": "string"
+  }
+]
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "direction": "string",
+    "fqdns": [
+      "list",
+      "string"
+    ],
+    "ip_addresses": [
+      "list",
+      "string"
+    ],
+    "port": "number",
+    "protocol": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+[
+  "object",
+  {
+    "location": "string",
+    "role": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "login": "string",
+    "object_id": "string",
+    "tenant_id": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "login": "string",
+    "object_id": "string",
+    "tenant_id": "string"
+  }
+]
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+[
+  "object",
+  {
+    "address_prefix": "string",
+    "id": "string",
+    "name": "string",
+    "security_group": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "express_route_id": "string",
+    "express_route_private_peering_id": "string",
+    "primary_subnet_cidr": "string",
+    "secondary_subnet_cidr": "string"
+  }
+]
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"set"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"set"
+"string"
+"map"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"set"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+[
+  "object",
+  {
+    "name": "string",
+    "password": "string"
+  }
+]
+"map"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"map"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+"string"
+"set"
+"string"
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]
+"list"
+[
+  "object",
+  {
+    "x_azure_fdid": [
+      "list",
+      "string"
+    ],
+    "x_fd_health_probe": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_for": [
+      "list",
+      "string"
+    ],
+    "x_forwarded_host": [
+      "list",
+      "string"
+    ]
+  }
+]

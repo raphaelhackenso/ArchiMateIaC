@@ -1,0 +1,1 @@
+.. | .attributes? | select(. != null) | keys[] | gsub("[\\[\\]\",]"; "")

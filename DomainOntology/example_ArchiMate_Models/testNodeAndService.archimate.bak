@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="testNodeAndService" id="id-30eb870dcb344543a7b0f7da021504ff" version="5.0.0">
+  <folder name="Strategy" id="id-94ca40a7900840c4a37dea7c58478823" type="strategy"/>
+  <folder name="Business" id="id-16950d66dbee4b2692d123af7f225e12" type="business"/>
+  <folder name="Application" id="id-e472b6c7c4b24899833b7353a6b53582" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-23147a055ce84928afe0a1ae5a1da703" type="technology">
+    <element xsi:type="archimate:Node" name="testStorage" id="id-cd4cd19c89884971b023775bc2f43613">
+      <property key="resource_group_name" value="azurerm_resource_group.testRG.name"/>
+      <property key="name" value="&quot;myarchimateiacstorage&quot;"/>
+      <property key="account_tier" value="&quot;Standard&quot;"/>
+      <property key="account_replication_type" value="&quot;LRS&quot;"/>
+      <property key="location" value="&quot;West Europe&quot;"/>
+      <property key="/timeouts/1/create" value="&quot;1h&quot;"/>
+      <property key="/timeouts/1/update" value="&quot;3h&quot;"/>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="testShare" id="id-5d37f068ae044f5a9f30b90644fc91b1">
+      <property key="name" value="&quot;myarchimateiacshare&quot;"/>
+      <property key="quota" value="50"/>
+      <property key="storage_account_name" value="azurerm_storage_account.testStorage.name"/>
+      <property key="/acl/1/id" value="&quot;MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTI&quot;"/>
+    </element>
+  </folder>
+  <folder name="Motivation" id="id-a73364b2ec93462984c24c382447216e" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-e80543c780444a528df78bc5bdd79500" type="implementation_migration"/>
+  <folder name="Other" id="id-de65aad746b64a16bef593dd6eec69a2" type="other">
+    <element xsi:type="archimate:Grouping" name="testRG" id="id-bbae19c5d3d7450fa3ade3e9a370e7c7">
+      <property key="name" value="&quot;testarchimateRG&quot;"/>
+      <property key="location" value="&quot;West Europe&quot;"/>
+      <property key="/timeouts/1/create" value="&quot;2h&quot;"/>
+    </element>
+  </folder>
+  <folder name="Relations" id="id-7c6e217875ff4d12b05acc608936f229" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="id-8c38e9423f51460f992e6a447a95cc60" source="id-bbae19c5d3d7450fa3ade3e9a370e7c7" target="id-cd4cd19c89884971b023775bc2f43613"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-51d9e44c13f54478aca0a2d6386e6d38" source="id-bbae19c5d3d7450fa3ade3e9a370e7c7" target="id-5d37f068ae044f5a9f30b90644fc91b1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-4baed136606d49c685f6d0eea40f3d4d" source="id-cd4cd19c89884971b023775bc2f43613" target="id-5d37f068ae044f5a9f30b90644fc91b1"/>
+  </folder>
+  <folder name="Views" id="id-26998c4c6d6446f8a936eceacff531f5" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-d0e4a9fc0c7946239274d5a91640b1e0">
+      <child xsi:type="archimate:DiagramObject" id="id-4fc19bef24b34b389c7eb2495b2d8ddc" textAlignment="1" archimateElement="id-bbae19c5d3d7450fa3ade3e9a370e7c7">
+        <bounds x="108" y="120" width="205" height="241"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fbb226e73a76496a92032a62d792044d" source="id-4fc19bef24b34b389c7eb2495b2d8ddc" target="id-d9284689ea924b36af3254861431dbb9" archimateRelationship="id-8c38e9423f51460f992e6a447a95cc60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-af6ba67e56414b9595f04f035b27df18" source="id-4fc19bef24b34b389c7eb2495b2d8ddc" target="id-c89bace1430343a796cc6b1b5b975b72" archimateRelationship="id-51d9e44c13f54478aca0a2d6386e6d38"/>
+        <child xsi:type="archimate:DiagramObject" id="id-d9284689ea924b36af3254861431dbb9" targetConnections="id-fbb226e73a76496a92032a62d792044d" archimateElement="id-cd4cd19c89884971b023775bc2f43613">
+          <bounds x="36" y="144" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d6b4e36b3a00420e823cdcab9c956104" source="id-d9284689ea924b36af3254861431dbb9" target="id-c89bace1430343a796cc6b1b5b975b72" archimateRelationship="id-4baed136606d49c685f6d0eea40f3d4d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c89bace1430343a796cc6b1b5b975b72" targetConnections="id-af6ba67e56414b9595f04f035b27df18 id-d6b4e36b3a00420e823cdcab9c956104" archimateElement="id-5d37f068ae044f5a9f30b90644fc91b1">
+          <bounds x="36" y="48" width="120" height="55"/>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

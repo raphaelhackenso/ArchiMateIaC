@@ -1,0 +1,63 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#> 
+PREFIX : <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+
+SELECT ?superClass
+WHERE {
+ terra:azurerm_api_management_custom_domain rdfs:subClassOf* ?superClass
+  
+}
+
+
+
+PREFIX te: <http://www.w3.org/2006/time-entry#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#> 
+PREFIX : <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+
+SELECT ?onProperty
+WHERE {
+terra:azurerm_aadb2c_directory
+rdfs:subClassOf ?subClasses . 
+?subClasses (owl:Restriction)* ?restriction .
+      ?restriction owl:onProperty ?onProperty .  
+}
+	
+
+SELECT ?everyClass
+WHERE {
+?everyClass rdf:type owl:Class
+}
+
+
+
+#der * ist für die owl#Class selber
+SELECT ?everyClass
+WHERE {
+?everyClass rdf:type* owl:Class .
+  FILTER (!isBlank(?everyClass))
+}
+
+
+
+## so finde ich ein Indivudal für eine bestimme Klasse
+SELECT ?instance
+WHERE {
+  ?instance a owl:NamedIndividual .
+  ?instance a terra:azurerm_virtual_network .
+}
+
+
+SELECT ?instance ?property ?value
+WHERE {
+  ?instance rdfs:subClassOf* archimateiac:default_virtual_network .
+  ?instance ?property ?value .
+}

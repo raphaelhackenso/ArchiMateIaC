@@ -30,6 +30,7 @@ public class OntologyUpdater {
         OWLObjectPropertyExpression propertyExpression = property;
 
         // TODO
+        //String[] concepts = targetConcepts.substring(1, targetConcepts.length()).split(" or ");
         String[] concepts = targetConcepts.substring(1, targetConcepts.length() - 1).split(" or ");
 
         // TODO
@@ -46,6 +47,7 @@ public class OntologyUpdater {
 
         // TODO
         OWLClassExpression classExpression;
+        //if (cardinality.equals("only")) {
         if (cardinality.equals("only")) {
             classExpression = dataFactory.getOWLObjectAllValuesFrom(propertyExpression, targetClassExpression);
         } else {

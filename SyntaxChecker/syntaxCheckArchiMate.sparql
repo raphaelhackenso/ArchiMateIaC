@@ -1,0 +1,99 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#> 
+PREFIX archi: <http://ikm-group.ch/archiMEO/archimate#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX archimateiac: <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#>
+
+# Get optional block types for Terraform resource Schema
+SELECT DISTINCT ?blockType
+WHERE {
+  terra:azurerm_api_management_logger a owl:Class ;
+            rdfs:subClassOf ?restriction .
+  ?restriction a owl:Restriction ;
+               owl:onProperty terra:hasBlockType ;
+               owl:someValuesFrom ?blockType .
+}
+
+
+# Get minimal block types for Terraform resource Schema
+SELECT DISTINCT ?blockType ?minCardinality
+WHERE {
+  terra:azurerm_api_management_logger a owl:Class .
+  terra:azurerm_api_management_logger rdfs:subClassOf ?restriction .
+  ?restriction owl:onProperty terra:hasBlockType ;
+               owl:minQualifiedCardinality ?minCardinality ;
+  				owl:onClass ?blockType
+}
+
+
+# Get maximal block types for Terraform resource Schema
+SELECT DISTINCT ?blockType ?maxCardinality
+WHERE {
+  terra:azurerm_api_management_logger a owl:Class .
+  terra:azurerm_api_management_logger rdfs:subClassOf ?restriction .
+  ?restriction owl:onProperty terra:hasBlockType ;
+               owl:maxQualifiedCardinality ?maxCardinality ;
+  				owl:onClass ?blockType
+}
+
+# ---------------------------------------------------------------------------
+
+# Get optional attibutes/objectProperties for Terraform resource Schema
+SELECT DISTINCT ?objectProperty ?type
+WHERE {
+  terra:azurerm_api_management_logger a owl:Class ;
+            rdfs:subClassOf ?restriction .
+  ?restriction a owl:Restriction ;
+               owl:onProperty ?objectProperty ;
+               owl:someValuesFrom ?type .
+  FILTER(?objectProperty != terra:hasBlockType)
+  FILTER(?objectProperty != archimateiac:semanticallyAnnotatedAs)
+  FILTER(?objectProperty != archimateiac:requiresOtherTerraformResource)
+}
+
+
+# Get required attibutes/objectProperties for Terraform resource Schema
+SELECT DISTINCT ?objectProperty ?type
+WHERE {
+  terra:azurerm_api_management_logger a owl:Class .
+  terra:azurerm_api_management_logger rdfs:subClassOf ?restriction .
+  ?restriction owl:onProperty ?objectProperty ;
+               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+  				owl:onDataRange ?type
+  FILTER(?objectProperty != terra:hasBlockType)
+  FILTER(?objectProperty != archimateiac:semanticallyAnnotatedAs)
+  FILTER(?objectProperty != archimateiac:requiresOtherTerraformResource)
+}
+
+# ---------------------------------------------------------------------------
+
+# For a given resource-schema that has a block type return required attributes
+SELECT DISTINCT ?objectProperty ?type
+WHERE {
+  terra:import a owl:Class ;
+                 rdfs:subClassOf ?restriction .
+    ?restriction owl:intersectionOf( ?resourceSchema  [
+                    a owl:Restriction ;
+                    owl:onProperty ?objectProperty ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onDataRange ?type
+    ] )
+  FILTER(?resourceSchema = terra:azurerm_api_management_api)
+}
+
+
+# For a given resource-schema that has a block type return optional attributes
+SELECT DISTINCT ?objectProperty ?type
+WHERE {
+  terra:import a owl:Class ;
+                 rdfs:subClassOf ?restriction .
+    ?restriction owl:intersectionOf( ?resourceSchema  [
+                    a owl:Restriction ;
+                    owl:onProperty ?objectProperty ;
+                    owl:someValuesFrom ?type ;
+    ] )
+  FILTER(?resourceSchema = terra:azurerm_api_management_api)
+}

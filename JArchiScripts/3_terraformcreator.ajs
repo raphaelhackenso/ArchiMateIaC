@@ -1,0 +1,49 @@
+﻿/*
+ * Convert ArchiMateIaCOntology-Model into Terraform HCL
+ */
+
+var pathToFiles = 'C:/Users/Administrator/Desktop/Masters1/exampleWithJARs/';
+
+var terraformcreator = 'terraformcreator-1.0-jar-with-dependencies.jar';
+var modelOntology = 'testNodeAndService.ttl';
+
+
+var commandArchiMateToOntolgy = ('java -jar ' + terraformcreator + ' ' + modelOntology);
+
+console.log(commandArchiMateToOntolgy);
+
+
+var processBuilder = new java.lang.ProcessBuilder('cmd.exe', '/c', commandArchiMateToOntolgy);
+processBuilder.directory(new java.io.File(pathToFiles));
+processBuilder.redirectErrorStream(false); //can be true so that the stout and stderr are combined into one stream
+
+
+var process = processBuilder.start();
+
+var inputStreamReader = new java.io.InputStreamReader(process.getInputStream());
+var errorStreamReader = new java.io.InputStreamReader(process.getErrorStream());
+
+var bufferedReader = new java.io.BufferedReader(inputStreamReader);
+var errorBufferedReader = new java.io.BufferedReader(errorStreamReader);
+
+var line;
+
+while ((line = bufferedReader.readLine()) !== null) {
+    console.setTextColor(0,255,0); // green
+    if(line != 'WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.'){
+        console.log(line);
+    }
+    
+}
+
+while ((line = errorBufferedReader.readLine()) !== null) {
+    console.error(line);
+}
+
+
+bufferedReader.close();
+errorBufferedReader.close();
+inputStreamReader.close();
+errorStreamReader.close();
+
+

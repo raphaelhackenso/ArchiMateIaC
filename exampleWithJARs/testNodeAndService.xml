@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="id-30eb870dcb344543a7b0f7da021504ff">
+  <name xml:lang="de">testNodeAndService</name>
+  <elements>
+    <element identifier="id-cd4cd19c89884971b023775bc2f43613" xsi:type="Node">
+      <name xml:lang="de">testStorage</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="de">azurerm_resource_group.testRG.name</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="de">"myarchimateiacstorage"</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="de">"Standard"</value>
+        </property>
+        <property propertyDefinitionRef="propid-4">
+          <value xml:lang="de">"LRS"</value>
+        </property>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="de">"West Europe"</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="de">"1h"</value>
+        </property>
+        <property propertyDefinitionRef="propid-7">
+          <value xml:lang="de">"2h"</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-5d37f068ae044f5a9f30b90644fc91b1" xsi:type="TechnologyService">
+      <name xml:lang="de">testShare</name>
+      <properties>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="de">"myarchimateiacshare"</value>
+        </property>
+        <property propertyDefinitionRef="propid-8">
+          <value xml:lang="de">50</value>
+        </property>
+        <property propertyDefinitionRef="propid-9">
+          <value xml:lang="de">azurerm_storage_account.testStorage.name</value>
+        </property>
+        <property propertyDefinitionRef="propid-10">
+          <value xml:lang="de">"MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTI"</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-bbae19c5d3d7450fa3ade3e9a370e7c7" xsi:type="Grouping">
+      <name xml:lang="de">testRG</name>
+      <properties>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="de">"testarchimateRG"</value>
+        </property>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="de">"West Europe"</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="de">"2h"</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-8c38e9423f51460f992e6a447a95cc60" source="id-bbae19c5d3d7450fa3ade3e9a370e7c7" target="id-cd4cd19c89884971b023775bc2f43613" xsi:type="Composition" />
+    <relationship identifier="id-51d9e44c13f54478aca0a2d6386e6d38" source="id-bbae19c5d3d7450fa3ade3e9a370e7c7" target="id-5d37f068ae044f5a9f30b90644fc91b1" xsi:type="Composition" />
+    <relationship identifier="id-4baed136606d49c685f6d0eea40f3d4d" source="id-cd4cd19c89884971b023775bc2f43613" target="id-5d37f068ae044f5a9f30b90644fc91b1" xsi:type="Realization" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="de">Technology &amp; Physical</label>
+      <item identifierRef="id-cd4cd19c89884971b023775bc2f43613" />
+      <item identifierRef="id-5d37f068ae044f5a9f30b90644fc91b1" />
+    </item>
+    <item>
+      <label xml:lang="de">Other</label>
+      <item identifierRef="id-bbae19c5d3d7450fa3ade3e9a370e7c7" />
+    </item>
+    <item>
+      <label xml:lang="de">Relations</label>
+      <item identifierRef="id-8c38e9423f51460f992e6a447a95cc60" />
+      <item identifierRef="id-51d9e44c13f54478aca0a2d6386e6d38" />
+      <item identifierRef="id-4baed136606d49c685f6d0eea40f3d4d" />
+    </item>
+    <item>
+      <label xml:lang="de">Views</label>
+      <item identifierRef="id-d0e4a9fc0c7946239274d5a91640b1e0" />
+    </item>
+  </organizations>
+  <propertyDefinitions>
+    <propertyDefinition identifier="propid-10" type="string">
+      <name>/acl/1/id</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-6" type="string">
+      <name>/timeouts/1/create</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-7" type="string">
+      <name>/timeouts/1/update</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-4" type="string">
+      <name>account_replication_type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-3" type="string">
+      <name>account_tier</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-5" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-2" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-8" type="string">
+      <name>quota</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-1" type="string">
+      <name>resource_group_name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-9" type="string">
+      <name>storage_account_name</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  <views>
+    <diagrams>
+      <view identifier="id-d0e4a9fc0c7946239274d5a91640b1e0" xsi:type="Diagram">
+        <name xml:lang="de">Default View</name>
+        <node identifier="id-4fc19bef24b34b389c7eb2495b2d8ddc" elementRef="id-bbae19c5d3d7450fa3ade3e9a370e7c7" xsi:type="Element" x="108" y="120" w="205" h="241">
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-d9284689ea924b36af3254861431dbb9" elementRef="id-cd4cd19c89884971b023775bc2f43613" xsi:type="Element" x="144" y="264" w="120" h="55">
+            <style>
+              <fillColor r="201" g="231" b="183" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-c89bace1430343a796cc6b1b5b975b72" elementRef="id-5d37f068ae044f5a9f30b90644fc91b1" xsi:type="Element" x="144" y="168" w="120" h="55">
+            <style>
+              <fillColor r="201" g="231" b="183" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <connection identifier="id-d6b4e36b3a00420e823cdcab9c956104" relationshipRef="id-4baed136606d49c685f6d0eea40f3d4d" xsi:type="Relationship" source="id-d9284689ea924b36af3254861431dbb9" target="id-c89bace1430343a796cc6b1b5b975b72">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>

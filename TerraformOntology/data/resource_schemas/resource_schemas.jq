@@ -1,0 +1,1 @@
+.. | .resource_schemas? | select(. != null) | keys[] | gsub("[\\[\\]\",]"; "")

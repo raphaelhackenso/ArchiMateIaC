@@ -1,0 +1,8 @@
+﻿terraform.exe providers schema -json > azurerm.json
+
+
+.\jq-win64.exe '.. | .type? | select(. != null)' azurermResourceSchema.json > datatypes.txt   all type
+.\jq-win64.exe -f .\resource_schemas.jq .\azurermResourceSchema.json > resource_schemas.txt
+.\jq-win64.exe -f .\type.jq .\azurermResourceSchema.json > type.txt
+.\jq-win64.exe -f .\attributes.jq .\azurermResourceSchema.json > attributes.txt
+

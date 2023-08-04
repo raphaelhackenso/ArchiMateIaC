@@ -1,0 +1,40 @@
+﻿/*
+ * Deploy the Terraform HCL in the Cloud
+ */
+
+var pathToFiles = 'C:/Users/Administrator/Desktop/Masters1/exampleWithJARs/';
+
+var terraformHCLfile = 'testNodeAndService.tf';
+
+
+var commandTerraformInit = ('terraform.exe init -no-color');
+var commandTerraformApply = ('terraform.exe apply -auto-approve -no-color');
+
+console.log(commandTerraformInit + ' && ' + commandTerraformApply);
+
+
+var processBuilder = new java.lang.ProcessBuilder('cmd.exe', '/c', commandTerraformInit + ' && ' + commandTerraformApply);
+processBuilder.directory(new java.io.File(pathToFiles));
+processBuilder.redirectErrorStream(true); //can be true so that the stout and stderr are combined into one stream
+
+
+var process = processBuilder.start();
+
+var inputStreamReader = new java.io.InputStreamReader(process.getInputStream());
+var bufferedReader = new java.io.BufferedReader(inputStreamReader);
+
+var line;
+
+while ((line = bufferedReader.readLine()) !== null) {
+
+    if(line.toLowerCase().includes('error')){
+        console.setTextColor(255,0,0) // red
+    }
+    console.log(line);
+}
+
+
+bufferedReader.close();
+inputStreamReader.close();
+
+

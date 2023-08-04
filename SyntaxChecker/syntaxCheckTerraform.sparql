@@ -1,0 +1,32 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#> 
+PREFIX archi: <http://ikm-group.ch/archiMEO/archimate#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX archimateiac: <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#>
+
+# does the given Class even exist?
+ASK
+{
+	archi:ApplicationCollaboration a owl:Class
+}
+
+
+# check if there is an ObjectProperty for the given relationship
+SELECT ?relationshipOP
+WHERE {
+	?relationshipOP rdfs:label "composition"@en
+}
+
+# ask if the direct relationship between source relationshiptype target is valid
+ASK {
+  archi:ApplicationCollaboration rdfs:subClassOf ?restriction .
+  ?restriction rdf:type owl:Restriction ;
+               owl:onProperty archi:accesses ;
+               owl:allValuesFrom ?value .
+  ?value rdf:type owl:Class ;
+         owl:unionOf ?list .
+  ?list rdf:rest*/rdf:first archi:Artifact .
+}

@@ -1,0 +1,26 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfsplus: <http://topbraid.org/spin/rdfsplus#>
+PREFIX archi: <http://ikm-group.ch/archiMEO/archimate#>
+PREFIX terra: <http://archimateiac.raphaelhackenso.at/TerraformOntology#>
+PREFIX archimateiac: <http://archimateiac.raphaelhackenso.at/ArchiMateIaCOntology#>
+
+
+# Insert an individual
+INSERT DATA {
+  archimateiac:default2test_azurerm_aadb2c_directory rdf:type owl:NamedIndividual ,
+                                                       terra:azurerm_aadb2c_directory ;
+}
+
+# Insert direct Attribute and value
+INSERT DATA {
+ 	archimateiac:default_azurerm_aadb2c_directory terra:display_name_dp  "insertTest"^^rdf:list .
+}
+
+# Insert a connected blocktype individual
+INSERT DATA {
+ 	archimateiac:default_azurerm_aadb2c_directory terra:hasBlockType archimateiac:something .
+}
+

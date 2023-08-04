@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    server_name archimateiac.raphaelhackenso.at;
+
+    location /TerraformOntology {
+        alias /etc/nginx/TerraformOntology.ttl;
+        default_type text/turtle;
+    }
+
+location /TerraformOntology.ttl {
+        alias /etc/nginx/TerraformOntology.ttl;
+        default_type text/turtle;
+    }
+
+location /ArchiMateSyntax.ttl {
+       alias /etc/nginx/ArchiMateSyntax.ttl;
+       default_type text/turtle;
+    }
+
+    location /ArchiMateSyntax {
+       alias /etc/nginx/ArchiMateSyntax.ttl;
+       default_type text/turtle;
+    }
+}

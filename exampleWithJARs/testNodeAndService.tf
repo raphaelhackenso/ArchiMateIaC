@@ -42,7 +42,7 @@ resource "azurerm_storage_account" "testStorage" {
 	account_replication_type = "LRS"
 
 	timeouts {
-		update = "3h"
+		update = "2h"
 		create = "1h"
 
 	}

@@ -96,7 +96,7 @@ archi:accesses rdf:type owl:ObjectProperty ;
                rdfs:domain archi:BehaviourElement ;
                rdfs:range archi:PassiveStructureElement ;
                rdfs:comment "Archimate V2.1 relatioships are determined by nouns: here 'access'" ;
-               rdfs:label "accesses"@en .
+               rdfs:label "access"@en .
 
 
 ###  http://ikm-group.ch/archiMEO/archimate#activeStructureComprisesInterface
@@ -170,8 +170,7 @@ archi:groups rdf:type owl:ObjectProperty ;
 archi:hasAccessTo rdf:type owl:ObjectProperty ;
                   rdfs:domain eo:EnterpriseObject ;
                   rdfs:range eo:EnterpriseObject ;
-                  rdfs:comment "The access relationship models the access of behavioral concepts to  business or data objects. (The Open Group)"@en ;
-                  rdfs:label "access"@en .
+                  rdfs:comment "The access relationship models the access of behavioral concepts to  business or data objects. (The Open Group)"@en .
 
 
 ###  http://ikm-group.ch/archiMEO/archimate#influence

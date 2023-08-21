@@ -37,8 +37,6 @@ public class ArchiMateValidations {
                     relationClass = "UsedBy";
                 }
 
-                System.out.println(relationClass);
-
                 String sparqlQuery = SPARQLArchiMateQueries.queryDoesClassExist(relationClass);
                 if (OntologyApacheJena.askBooleanSPARQLQuery(ArchiMateIaCOntologyCombined, sparqlQuery) == false) {
                     Main.abort("The Concept " + relationClass + " cannot be found in the ontology");
@@ -64,6 +62,14 @@ public class ArchiMateValidations {
                             .returnRelationshipOPSPARQLQuery(ArchiMateIaCOntologyCombined, sparqlQueryOP), "#");
                     String sourceClass = XMLLoader.findElementById(archiMateModel, sourceID).getAttribute("xsi:type");
                     String targetClass = XMLLoader.findElementById(archiMateModel, targetID).getAttribute("xsi:type");
+
+                    if(sourceClass.toLowerCase().equals("andjunction") || sourceClass.toLowerCase().equals("orjunction")){
+                        sourceClass = "Junction";
+                    }
+
+                    if(targetClass.toLowerCase().equals("andjunction") || targetClass.toLowerCase().equals("orjunction")){
+                        targetClass = "Junction";
+                    }
 
                     String sparqlQueryIsDirectRelationAllowed = SPARQLArchiMateQueries
                             .queryIsDirectRelationAllowed(sourceClass, relationConnection, targetClass);

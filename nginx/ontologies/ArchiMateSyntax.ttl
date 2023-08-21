@@ -211,7 +211,8 @@ archi:representationRealizesBusinessObject rdf:type owl:ObjectProperty ;
 archi:specializes rdf:type owl:ObjectProperty ;
                   rdfs:domain eo:EnterpriseObject ;
                   rdfs:range eo:EnterpriseObject ;
-                  rdfs:comment "Archimate V2.1 relatioships: specialization" .
+                  rdfs:comment "Archimate V2.1 relatioships: specialization" ;
+                  rdfs:label "specialization"@en .
 
 
 ###  http://ikm-group.ch/archiMEO/archimate#triggers

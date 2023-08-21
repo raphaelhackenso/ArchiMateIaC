@@ -95,7 +95,8 @@ xsd:date rdf:type rdfs:Datatype .
 archi:accesses rdf:type owl:ObjectProperty ;
                rdfs:domain archi:BehaviourElement ;
                rdfs:range archi:PassiveStructureElement ;
-               rdfs:comment "Archimate V2.1 relatioships are determined by nouns: here 'access'" .
+               rdfs:comment "Archimate V2.1 relatioships are determined by nouns: here 'access'" ;
+               rdfs:label "accesses"@en .
 
 
 ###  http://ikm-group.ch/archiMEO/archimate#activeStructureComprisesInterface
@@ -122,7 +123,6 @@ archi:assignedTo rdf:type owl:ObjectProperty ;
                  rdfs:range eo:EnterpriseObject ;
                  rdfs:comment "Archimate V2.1 relatioships are determined by nouns: here 'assignment'" ;
                  rdfs:label "assignment"@en .
-                 rdfs:label "accesses"@en .
 
 
 ###  http://ikm-group.ch/archiMEO/archimate#associatedWith

@@ -37,6 +37,8 @@ public class ArchiMateValidations {
                     relationClass = "UsedBy";
                 }
 
+                System.out.println(relationClass);
+
                 String sparqlQuery = SPARQLArchiMateQueries.queryDoesClassExist(relationClass);
                 if (OntologyApacheJena.askBooleanSPARQLQuery(ArchiMateIaCOntologyCombined, sparqlQuery) == false) {
                     Main.abort("The Concept " + relationClass + " cannot be found in the ontology");
